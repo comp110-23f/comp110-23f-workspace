@@ -25,4 +25,9 @@ if char in word[3]:
 if char in word[4]:
     ticker += 1
     print(char + ' found at index 4')
-print(str(ticker) + ' instance of ' + char + ' found in '+ word)
+if ticker > 1:
+    print(str(ticker) + ' instances of ' + char + ' found in ' + word)
+if ticker == 1:
+    print(str(ticker) + ' instance of ' + char + ' found in ' + word)
+if ticker == 0:
+    print('No instances of ' + char + ' found in ' + word)
